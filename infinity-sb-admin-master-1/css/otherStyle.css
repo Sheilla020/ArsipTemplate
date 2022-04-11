@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1400px) {
+  .table th.aksi {
+    width: 17% !important;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.table td {
+  height: 41px !important;
+}
+
+.table th.aksi {
+  width: 13%;
+}
+
+.data-overview {
+  width: 900px;
+}
+
+.data-overview td.title {
+  padding-right: 30px;
+  width: 350px;
+  color: #007be6;
+}
+
+.table.table-wrapper {
+  max-height: 100px;
+  overflow: auto;
+  display: inline-block;
+}
+
+.ms-n5 {
+  margin-left: -40px;
+}
+
+.display-none {
+  display: none;
+}
+
+.headrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-top-width: 1px;
+  /*only relevant for first row*/
+  margin-top: -1px;
+  /*compensate for top border*/
+}
+
+.fixed-row-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+.btn.btn-custom {
+  min-width: 100px;
+}
+
+.btn.btn-custom.active-menu {
+  background-color: #0060d6;
+  color: #ffffff;
+  border: 4px solid #87b9f5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0 !important;
+}
+
+.bg-approve {
+  background: linear-gradient(
+    180deg,
+    rgba(85, 161, 255, 1) 15%,
+    rgba(0, 112, 252, 1) 50%,
+    rgba(85, 161, 255, 1) 85%
+  );
+  border-top-left-radius: 0.6rem !important;
+  border-top-right-radius: 0.6rem !important;
+}
+
+.bg-reject {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 71, 92, 1) 15%,
+    rgba(244, 27, 53, 1) 50%,
+    rgba(245, 71, 92, 1) 85%
+  );
+  border-top-left-radius: 0.6rem !important;
+  border-top-right-radius: 0.6rem !important;
+}
+
+.bg-custom {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 130, 227, 1) 0%,
+    rgba(43, 75, 156, 1) 50%,
+    rgba(0, 130, 227, 1) 100%
+  );
+}
+
+.upload-file-button > input {
+  display: none;
+}
+
+.upload-file-icon {
+  font-size: 24px;
+  color: red;
+}
+
+.navbar img.pgn-logo {
+  width: 8rem;
+}
+
+.navbar.menu-bar {
+}
+
+.navbar.menu-bar .navbar-nav .nav-item {
+  min-width: 100px;
+  text-align: center;
+}
+
+.navbar.menu-bar .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar.menu-bar .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(5, 86, 198);
+  font-weight: 500;
+  border-top: rgb(5, 86, 198) 1px solid;
+  border-bottom: rgb(5, 86, 198) 1px solid;
+}
+
+.navbar.menu-bar .navbar-nav .nav-item.active .nav-link {
+  color: rgb(5, 86, 198);
+  font-weight: 500;
+  border-top: rgb(5, 86, 198) 1px solid;
+  border-bottom: rgb(5, 86, 198) 1px solid;
+  border-top: rgb(5, 86, 198) 1px solid;
+  border-bottom: rgb(5, 86, 198) 1px solid;
+}
+
+.navbar.menu-bar .navbar-nav .nav-item.active .nav-link {
+}
+
+.btn-telegram{
+  background-color: rgb(0, 136, 204);
+}

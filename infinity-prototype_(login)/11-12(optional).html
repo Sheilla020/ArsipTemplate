@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-Bootstrap-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!--JS-Bootstrap-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/664f9114f4.js" crossorigin="anonymous"></script>
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/otherStyle.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+      </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+      <!-- Top navigation-->
+      <nav class="navbar navbar-expand-lg navbar-bg border-bottom">
+        <div class="container-fluid">
+          <button class="btn navbar-bg text-white mr-4" id="sidebarToggle"><i class="fas fa-angle-right"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <img src="img/pgn-logo.png" alt="" style="width:12rem; margin-top: 10px; margin-right: -10px;">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Staff Admin Gudang</a>
+
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#!">Logout</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page content-->
+      <div class="container-fluid">
+        <h1 class="my-5 text-center">Pengeluaran Material</h1>
+
+        <div class="row mx-0 px-5">
+          <h4 class="mb-2">Input Data Pengeluaran</h4>
+          <div class="container py-4 px-5">
+            <form action="10.html">
+              <div class="mb-3 row">
+                <label for="tanggalPengeluaran" class="col-sm-3 col-form-label">Tanggal Pengeluaran</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" id="tanggalPengeluaran">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="jenisTransaksi" class="col-sm-3 col-form-label">Jenis Transaksi</label>
+                <div class="col-sm-9">
+                  <select class="form-select" id="jenisTransaksi" onchange="showDiv(this)">
+                    <option hidden>Select First</option>
+                    <option value="internal">Internal</option>
+                    <option value="eksternal">Eksternal</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- INTERNAL -->
+              <div class="display-none" id="internalTransaksi">
+                <div class="mb-3 row">
+                  <label for="keperluanPengeluaran" class="col-sm-3 col-form-label">Keperluan Pengeluaran</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" id="keperluanPengeluaran" rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EKSTERNAL -->
+              <div class="display-none" id="eksternalTransaksi">
+                <div class="mb-3 row">
+                  <label for="kodeProyek" class="col-sm-3 col-form-label">Kode Proyek</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="kodeProyek">
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="namaProyek" class="col-sm-3 col-form-label">Nama Proyek</label>
+                  <div class="col-sm-9">
+                    <input type="text" readonly class="form-control" id="namaProyek" value="Rokan">
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="uploadDokumenPengeluaran" class="col-sm-3 col-form-label">Upload Dokumen
+                  Pengeluaran</label>
+                <div class="col-sm-9">
+                  <input class="form-control" type="file" id="uploadDokumenPengeluaran">
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                  <button class="btn btn-info text-white btn-custom rounded-pill">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

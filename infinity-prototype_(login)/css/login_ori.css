@@ -1,0 +1,235 @@
+/* screen - login */
+
+.from-box {
+  width: 5000px;
+  height: 500px;
+}
+
+
+.login {
+  height: 1024px;
+  overflow: hidden;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 1440px;
+}
+
+.login:hover {
+  transform: scale(1.1);
+}
+
+.login .overlap-group {
+  height: 1179px;
+  left: -166px;
+  position: relative;
+  top: -155px;
+  width: 1884px;
+}
+
+.login .login-1 {
+  height: 1024px;
+  left: 166px;
+  pointer-events: auto;
+  position: absolute;
+  top: 155px;
+  transition: all 0.2s ease;
+  width: 1440px;
+}
+
+.login .login-1:hover {
+  transform: scale(1.1);
+}
+
+.login .group-62 {
+  height: 1042px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1884px;
+}
+
+.login .ellipse-1 {
+  height: 453px;
+  left: 298px;
+  position: absolute;
+  top: 369px;
+  width: 500px;
+}
+
+.login .rectangle-93 {
+  -webkit-backdrop-filter: blur(20px) brightness(100%);
+  backdrop-filter: blur(20px) brightness(100%);
+  background-color: #ffffff33;
+  border-radius: 20px;
+  height: 899px;
+  left: 942px;
+  position: absolute;
+  top: 218px;
+  width: 581px;
+}
+
+.login .rectangle-82 {
+  background-color: #ffffff8f;
+  border-radius: 20px;
+  height: 62px;
+  left: 1029px;
+  position: absolute;
+  top: 629px;
+  width: 414px;
+}
+
+.login .rectangle-94 {
+  background-color: #ffffff8f;
+  border-radius: 20px;
+  height: 62px;
+  left: 1029px;
+  position: absolute;
+  top: 530px;
+  width: 414px;
+}
+
+.login .rectangle-84 {
+  background-color: #ffffff70;
+  border-radius: 20px;
+  height: 62px;
+  left: 1029px;
+  position: absolute;
+  top: 629px;
+  width: 78px;
+}
+
+.login .rectangle-86 {
+  background-color: #d4d8e2;
+  border-radius: 20px;
+  height: 62px;
+  left: 1030px;
+  position: absolute;
+  top: 530px;
+  width: 78px;
+}
+
+.login .text-1 {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  left: 1002px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 741px;
+}
+
+.login .bxbxs-user-circle {
+  align-items: flex-end;
+  display: flex;
+  height: 47px;
+  left: 1044px;
+  padding: 3.0px 3.0px;
+  position: absolute;
+  top: 636px;
+  width: 47px;
+}
+
+.login .vector {
+  height: 41px;
+  width: 41px;
+}
+
+.login .username {
+  color: #21315a;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  left: 1129px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 643px;
+}
+
+.login .password {
+  color: #21315a;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  left: 1129px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 540px;
+}
+
+.login .rectangle-87 {
+  height: 64px;
+  left: 1144px;
+  position: absolute;
+  top: 387px;
+  width: 188px;
+}
+
+.login .login-2 {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  left: 1199px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 403px;
+}
+
+.login .lupa-password {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  left: 1156px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 333px;
+}
+
+.login .title {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  left: 1069px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 1041px;
+  width: 411px;
+}
+
+.login .text-2 {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  left: 989px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 882px;
+}
+
+.login .dashiconslock-duplicate {
+  align-items: flex-start;
+  display: flex;
+  height: 46px;
+  left: 1045px;
+  padding: 4.0px 9.0px;
+  position: absolute;
+  top: 540px;
+  width: 46px;
+}
+
+.login .vector-1 {
+  height: 38px;
+  margin-left: 1px;
+  width: 28px;
+}
+
+.login .image-1 {
+  height: 89px;
+  left: 197px;
+  position: absolute;
+  top: 1066px;
+  width: 329px;
+}

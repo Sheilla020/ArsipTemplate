@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-Bootstrap-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!--JS-Bootstrap-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/664f9114f4.js" crossorigin="anonymous"></script>
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/otherStyle.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+      <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+      <div class="list-group list-group-flush">
+        <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a> -->
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_review_data_staff_accounting.html">Staff Accounting</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_review_data_staff_gudang.html">Staff Gudang</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_review_approve_data_kadep_kagud.html">Kadep dan Kepala Gudang</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_pengeluaran_internal.html">Pengeluaran Internal</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_pengeluaran_eksternal.html">Pengeluaran Eksternal</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_listing_pengeluaran_barang.html">Halaman Listing Pengeluaran Barang</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_lokasi_penempatan_staff_gudang.html">Halaman Lokasi Penempatan Staff Gudang</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3"
+          href="halaman_approve_data_pengeluaran_material.html">Halaman Approve Data Pengeluaran Material</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3 active"
+          href="halaman_stock_opname.html">Halaman Stock Opname</a>
+        <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a> -->
+      </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+      <!-- Top navigation-->
+      <nav class="navbar navbar-expand-lg navbar-bg border-bottom">
+        <div class="container-fluid">
+          <button class="btn navbar-bg text-white mr-4" id="sidebarToggle"><i class="fas fa-angle-right"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <img class="pgn-logo" src="img/pgn-logo.png">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Staff Admin Gudang</a>
+
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#!">Logout</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#!">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page content-->
+      <div class="container-fluid">
+        <h1 class="my-5 text-center">Stock Opname</h1>
+
+        <div class="row m-0 px-5">
+          <div class="col-6">
+            <div class="mx-5 my-3 row">
+              <label for="periode" class="col-sm-4 col-form-label">Periode</label>
+              <div class="col-sm-8">
+                <input type="date" class="form-control" id="periode">
+              </div>
+            </div>
+            <div class="mx-5 mb-3 row">
+              <label for="lokasiGudang" class="col-sm-4 col-form-label">Lokasi Gudang</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="lokasiGudang">
+              </div>
+            </div>
+            <div class="mx-5 mb-3 row">
+              <label for="someText" class="col-sm-4 col-form-label">Some Text</label>
+              <div class="col-sm-8">
+                <select class="form-select" id="someText">
+                  <option value="All">All</option>
+                  <option value="1">(Check) Material 1</option>
+                  <option value="2">Material 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-sm-6 px-5">
+                <div class="d-md-flex justify-content-md-end me-4">
+                  <button type="button" class="btn btn-primary text-light btn-custom rounded-pill">Search</button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row d-md-flex justify-content-md-end">
+                  <div class="col-4">
+                    <div class="input-group">
+                      <input class="form-control border-end-0 border" type="search" placeholder="search"
+                        id="example-search-input">
+                      <span class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-white border ms-n5" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mx-0 px-5">
+          <div class="col-12 mt-4">
+            <div style="max-height: 250px; overflow-y:auto;">
+              <table class="table table-bordered">
+                <tr class="table-primary">
+                  <th>Kode Material</th>
+                  <th>Nama Material</th>
+                  <th>Jumlah Tersedia</th>
+                  <th>Jumlah Stock Opname</th>
+                  <th>Satuan</th>
+                  <th>Aksi</th>
+                </tr>
+                <tr>
+                  <td>56789</td>
+                  <td>FILTER OLI CATERPILLAR 1R-1808</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>PCS</td>
+                  <td class="text-center"><a href="#inputStockOpnameModal" data-bs-toggle="modal"
+                      data-bs-target="#inputStockOpnameModal"><i class="fas fa-pencil-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td>56790</td>
+                  <td>OLI NGEO CATERPILLAR NGEO EL350 SAE 40</td>
+                  <td>3</td>
+                  <td></td>
+                  <td>DRUM</td>
+                  <td class="text-center"><a href="#inputStockOpnameModal" data-bs-toggle="modal"
+                      data-bs-target="#inputStockOpnameModal"><i class="fas fa-pencil-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td>56791</td>
+                  <td>SOS Engine Analysis HP427</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>UNIT</td>
+                  <td class="text-center"><a href="#inputStockOpnameModal" data-bs-toggle="modal"
+                      data-bs-target="#inputStockOpnameModal"><i class="fas fa-pencil-alt"></i></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-0 px-5">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-outline-dark btn-custom rounded-pill me-md-2" type="button">Save as Draft</button>
+            <button class="btn btn-success btn-custom rounded-pill" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="inputStockOpnameModal" tabindex="-1" aria-labelledby="inputStockOpnameModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <form action="halaman_stock_opname.html">
+              <div class="modal-header justify-content-md-center navbar-bg">
+                <h5 class="modal-title text-center text-white" id="inputStockOpnameModalLabel">Stock Opname Material
+                </h5>
+              </div>
+              <div class="modal-body">
+                <div class="container px-5">
+                  <div class="mb-3 row justify-content-md-center">
+                    <div class="mb-3 row justify-content-md-center">
+                      <label for="namaMaterial" class="col-sm-3 col-form-label">Nama Material</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="namaMaterial">
+                      </div>
+                    </div>
+                    <div class="mb-3 row justify-content-md-center">
+                      <label for="jumlahTersedia" class="col-sm-3 col-form-label">Jumlah Tersedia</label>
+                      <div class="col-sm-6">
+                        <input type="number" readonly class="form-control" id="jumlahTersedia" value="10">
+                      </div>
+                    </div>
+                    <div class="mb-3 row justify-content-md-center">
+                      <label for="jumlahStockOpname" class="col-sm-3 col-form-label">Jumlah Stock Opname</label>
+                      <div class="col-sm-6">
+                        <input type="number" class="form-control" id="jumlahStockOpname">
+                      </div>
+                    </div>
+                    <div class="mb-3 row justify-content-md-center">
+                      <label for="kodeMaterial" class="col-sm-3 col-form-label">Scan Barcode</label>
+                      <div class="col-sm-6">
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" aria-label="KodeMaterial"
+                            aria-describedby="kodeMaterial">
+                          <span class="input-group-text" id="kodeMaterial"><i class="fas fa-barcode"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mx-0 px-5">
+                    <div class="col-12 mt-4">
+                      <div style="max-height: 250px; overflow-y:auto;">
+                        <table class="table table-bordered">
+                          <tr class="table-primary">
+                            <th>Kode Material</th>
+                            <th>Nama Material</th>
+                            <th>Lokasi Material</th>
+                            <th>Satuan</th>
+                            <th>Harga</th>
+                            <th>Aksi</th>
+                          </tr>
+                          <tr class="align-middle">
+                            <td>11111</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-center"></a>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-center"></a>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-center"></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                      <button type="submit" class="btn btn-success btn-custom rounded-pill">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+</body>
+
+</html>

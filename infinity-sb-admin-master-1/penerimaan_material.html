@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>INFINITY - Penerimaan Material</title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Icon Web -->
+    <link rel="icon" href="img/infinity-logo.png">
+    
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template-->
+    <!--    <link href="css/sb-admin-2.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/sb-admin-2.css">
+
+    <link rel="stylesheet" href="css/otherStyle.css">
+
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <!--                    <i class="fas fa-laugh-wink"></i>-->
+                    <img src="img/infinity-logo.png" alt="" width="70%">
+                </div>
+                <div class="sidebar-brand-text mx-3">INFINITY</div>
+            </a>
+
+            <!-- Divider -->
+            <!--            <hr class="sidebar-divider my-0">-->
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+
+            <!-- <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengeluaran"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Pengeluaran</span>
+                </a>
+                <div id="collapsePengeluaran" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="pengeluaran_internal.html">Internal</a>
+                        <a class="collapse-item" href="pengeluaran_eksternal.html">Eksternal</a>
+                    </div>
+                </div>
+            </li> -->
+
+            <li class="nav-item active">
+                <a class="nav-link" href="penerimaan_material.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Penerimaan</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pengeluaran_material.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Pengeluaran</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="stock-opname.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Stock Opname</span></a>
+            </li>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Laporan</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--                        <h6 class="collapse-header">Custom Components:</h6>-->
+                        <a class="collapse-item" href="#">Penerimaan</a>
+                        <a class="collapse-item" href="#">Pengeluaran</a>
+                        <a class="collapse-item" href="#">Stock Opname</a>
+                        <a class="collapse-item" href="#">Laporan Persediaan</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMasterData"
+                    aria-expanded="true" aria-controls="collapseMasterData">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Master Data</span>
+                </a>
+                <div id="collapseMasterData" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--                        <h6 class="collapse-header">Custom Components:</h6>-->
+                        <a class="collapse-item" href="#">User</a>
+                        <a class="collapse-item" href="#">Material</a>
+                        <a class="collapse-item" href="#">Hak Akses</a>
+                        <a class="collapse-item" href="#">Gudang</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="penerimaan_material_staff_gudang.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Staff Gudang</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="preview_data_staff_accounting.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Staff Accounting</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="penerimaan_material_kadep.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Kadep</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="penerimaan_material_kagud.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Kepala Gudang</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="halaman_approve_data_pengeluaran_material.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Halaman Approve Data Pengeluaran Material</span></a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-gradient-primary topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <img class="pgn-logo-navbar" src="img/pgn-logo.png">
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="sidebar-brand-icon">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <span class="mx-3 d-none d-lg-inline text-gray-100">Staff Gudang</span>
+
+                                <!--                                <img class="img-profile rounded-circle"-->
+                                <!--                                    src="img/undraw_profile.svg">-->
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <h1 class="my-5 text-center">Penerimaan Material</h1>
+                    <div class="row px-5">
+                        <div class="col-sm-3 d-flex justify-content-center">
+                            <button class="btn btn-primary btn-custom rounded-pill" type="button" data-toggle="modal"
+                                data-target="#tambahPenenerimaanMaterialModal"><i class="fas fa-plus"></i> Penerimaan
+                                Material</button>
+                        </div>
+                    </div>
+                    <div class="row px-5 mx-0 my-3">
+                        <!-- <div class="col-sm-6">
+                            <div class="row">
+                                <label for="jenisPenerimaan" class="col-sm-3 col-form-label text-end">Jenis
+                                    Penerimaan</label>
+                                <label class="col-sm-2 col-form-label" id="show">All</label>
+                                <div class="col-sm-7">
+                                    <div class="dropdown" id="Manufacturer">
+                                        <button class="btn btn-primary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown">Choose
+                                            <span class="caret"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-sm-3">
+                            <div class="row">
+                                <label for="jenisPenerimaan" class="col-sm-6 col-form-label text-end">Jenis
+                                    Penerimaan</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" id="jenisPenerimaan">
+                                        <option hidden>All</option>
+                                        <option value="Pengadaan">Pengadaan</option>
+                                        <option value="Retur">Retur</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-9">
+                            <div class="row d-md-flex justify-content-md-end">
+                                <div class="col-4">
+                                    <div class="input-group">
+                                        <input class="form-control border-end-0 border" type="search"
+                                            placeholder="search" id="example-search-input">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-outline-secondary bg-white border ms-n5"
+                                                type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="bg-primary">
+                                        <tr class="text-center">
+                                            <th class="align-middle" style="width: 10%;">Kode Transaksi</th>
+                                            <th class="align-middle" style="width: 8%;">Tanggal Transaksi</th>
+                                            <th class="align-middle" style="width: 6%;">Jenis Penerimaan</th>
+                                            <th class="align-middle" style="width: 11%;">Nomor BAST</th>
+                                            <th class="align-middle" style="width: 6%;">No PO</th>
+                                            <th class="align-middle" style="width: 8%;">Kode Proyek</th>
+                                            <th class="align-middle" style="width: 12%;">Status</th>
+                                            <th class="align-middle" style="width: 11%;">Nama Gudang</th>
+                                            <th class="align-middle" style="width: 10%;">Inputer</th>
+                                            <th class="align-middle" style="width: 15%;">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle text-center">2020101501</td>
+                                            <td class="align-middle text-center">21-03-21</td>
+                                            <td class="align-middle text-center">Pengadaan</td>
+                                            <td class="align-middle text-center">BAST_12345</td>
+                                            <td class="align-middle text-center">120721</td>
+                                            <td class="align-middle text-center">111222</td>
+                                            <td class="align-middle text-center">Pending Review Kadep Persediaan</td>
+                                            <td class="align-middle">Gudang Batam</td>
+                                            <td class="align-middle">Admin Persediaan</td>
+                                            <td class="align-middle text-center">
+                                                <a href="#previewPenerimaanMaterialModal"
+                                                    class="btn btn-warning btn-sm rounded-circle text-white py-1 mb-1 px-2" data-target="#previewPenerimaanMaterialModal" data-toggle="modal"><i
+                                                        class="fas fa-eye"></i></a>
+                                                <a href="#hapusMaterialModal" data-target="#hapusMaterialModal"
+                                                    data-toggle="modal"
+                                                    class="btn btn-danger btn-sm rounded-circle text-white py-1 mb-1 px-2"><i
+                                                        class="fas fa-trash"></i></a>
+                                                <a href="#"
+                                                    class="btn btn-secondary btn-sm rounded-circle text-white py-1 mb-1 px-2"><i
+                                                        class="fas fa-download"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-center">2020101502</td>
+                                            <td class="align-middle text-center">22-04-21</td>
+                                            <td class="align-middle text-center">Retur</td>
+                                            <td class="align-middle text-center">BAST_12347</td>
+                                            <td class="align-middle text-center">170721</td>
+                                            <td class="align-middle text-center">111222</td>
+                                            <td class="align-middle text-center">Draft</td>
+                                            <td class="align-middle">Gudang Bogor</td>
+                                            <td class="align-middle">Admin Persediaan</td>
+                                            <td class="align-middle text-center">
+                                                <a href="#previewPenerimaanMaterialModal"
+                                                    class="btn btn-warning btn-sm rounded-circle text-white py-1 mb-1 px-2" data-target="#previewPenerimaanMaterialModal" data-toggle="modal"><i
+                                                        class="fas fa-eye"></i></a>
+                                                <a href="penerimaan_view_data.html"
+                                                    class="btn btn-success btn-sm rounded-circle text-white py-1 mb-1 px-2"><i
+                                                        class="fas fa-pencil-alt"></i></a>
+                                                <a href="#hapusMaterialModal" data-target="#hapusMaterialModal"
+                                                    data-toggle="modal"
+                                                    class="btn btn-danger btn-sm rounded-circle text-white py-1 mb-1 px-2"><i
+                                                        class="fas fa-trash"></i></a>
+                                                <a href="#"
+                                                    class="btn btn-secondary btn-sm rounded-circle text-white py-1 mb-1 px-2"><i
+                                                        class="fas fa-download"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Tambah Penerimaan Material Modal -->
+    <div class="modal fade" id="tambahPenenerimaanMaterialModal" tabindex="-1"
+        aria-labelledby="tambahPenerimaanMaterialModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header justify-content-md-center bg-gradient-primary">
+                    <h5 class="modal-title text-white" id="tambahPenerimaanMaterialModalLabel">Input Data
+                        Penerimaan
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-0 px-5">
+                        <!-- <h4 class="mb-2">Input Data Penerimaan</h4> -->
+                        <div class="container py-4 px-5">
+                            <form action="penerimaan_view_data.html">
+                                <div class="mb-3 row">
+                                    <label for="jenisPenerimaan" class="col-sm-4 col-form-label">Jenis
+                                        Penerimaan</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="jenisPenerimaan">
+                                            <option hidden>Select First</option>
+                                            <option value="pembelian">Pembelian</option>
+                                            <option value="retur">Retur</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="judulBASTDO" class="col-sm-4 col-form-label">Judul BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="judulBASTDO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="nomorBASTDO" class="col-sm-4 col-form-label">Nomor BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nomorBASTDO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tanggalBASTDO" class="col-sm-4 col-form-label">Tanggal
+                                        BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalBASTDO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="jumlahHargaBASTDO" class="col-sm-4 col-form-label">Jumlah Harga BAST/DO
+                                        (ex ppn)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="jumlahHargaBASTDO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="namaPenyediaMaterial" class="col-sm-4 col-form-label">Nama Penyedia
+                                        Material</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="namaPenyediaMaterial">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="nomorPO" class="col-sm-4 col-form-label">Nomor PO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nomorPO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tanggalPO" class="col-sm-4 col-form-label">Tanggal
+                                        PO</label>
+                                    <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalPO">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="kodeProyek" class="col-sm-4 col-form-label">Kode Proyek</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="kodeProyek">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="namaProyek" class="col-sm-4 col-form-label">Nama Proyek</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="namaProyek">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="kodeAkun" class="col-sm-4 col-form-label">Kode Akun</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="kodeAkun">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="pemilikMaterial" class="col-sm-4 col-form-label">Pemilik
+                                        Material</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="pemilikMaterial">
+                                            <option hidden>Select First</option>
+                                            <option value="o&m">O&M</option>
+                                            <option value="other">Other Pemilik</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="uploadFile" class="col-sm-4 col-form-label">Upload File</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" type="file" id="uploadFile">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="gudangPenempatan" class="col-sm-4 col-form-label">Gudang
+                                        Penempatan</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="gudangPenempatan">
+                                            <option hidden>Select First</option>
+                                            <option value="Pagardewa">Pagardewa</option>
+                                            <option value="Klender">Klender</option>
+                                            <option value="Bogor">Bogor</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row justify-content-md-end">
+                                    <button class="btn btn-info text-white btn-custom rounded-pill">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Penerimaan Material Modal -->
+    <div class="modal fade" id="previewPenerimaanMaterialModal" tabindex="-1"
+        aria-labelledby="previewPenerimaanMaterialModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header justify-content-md-center bg-gradient-primary">
+                    <h5 class="modal-title text-white" id="previewPenerimaanMaterialModalLabel">Input Data
+                        Penerimaan
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-0 px-5">
+                        <div class="container py-4 px-5">
+                            <form action="penerimaan_material.html">
+                                <div class="mb-3 row">
+                                    <label for="kodeTransaksiPenerimaan" class="col-sm-4 col-form-label">Kode Transaksi
+                                        Penerimaan</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="kodeTransaksiPenerimaan"
+                                            value="Disesuaikan dengan aturan kode pada penerimaan (otomatis by sistem)"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tanggalTransaksi" class="col-sm-4 col-form-label">Tanggal
+                                        Transaksi</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="tanggalTransaksi"
+                                            value="14/07/2021 (sesuai dengan tanggal klik simpan pada halaman sebelumnya)"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="jenisPenerimaan" class="col-sm-4 col-form-label">Jenis
+                                        Penerimaan</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="jenisPenerimaan" disabled>
+                                            <option hidden>Select First</option>
+                                            <option value="pengadaan" selected>Pengadaan</option>
+                                            <option value="retur">Retur</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="judulBASTDO" class="col-sm-4 col-form-label">Judul BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="judulBASTDO"
+                                            value="Pembelian Barang Proyek Rokan" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="nomorBASTDO" class="col-sm-4 col-form-label">Nomor BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nomorBASTDO" value="BAST-001-2021"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tanggalBASTDO" class="col-sm-4 col-form-label">Tanggal
+                                        BAST/DO</label>
+                                    <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalBASTDO" value="2021-07-12"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="jumlahHargaBASTDO" class="col-sm-4 col-form-label">Jumlah Harga BAST/DO
+                                        (ex ppn)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="jumlahHargaBASTDO"
+                                            value="Rp. 540.000.000,00" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="namaPenyediaMaterial" class="col-sm-4 col-form-label">Nama Penyedia
+                                        Material</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="namaPenyediaMaterial"
+                                            value="PT Aroma Kopi Kontraktor" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="nomorPO" class="col-sm-4 col-form-label">Nomor PO</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nomorPO" value="PO-001-2021"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tanggalPO" class="col-sm-4 col-form-label">Tanggal
+                                        PO</label>
+                                    <div class="col-sm-8">
+                                        <input type="date" class="form-control" id="tanggalPO" value="2021-07-05"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="kodeProyek" class="col-sm-4 col-form-label">Kode Proyek</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="kodeProyek"
+                                            value="ambil dari komersial" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="namaProyek" class="col-sm-4 col-form-label">Nama Proyek</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="namaProyek"
+                                            value="Proyek Pipa Rokan (otomatis dari aplikasi Komersial)" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="kodeAkun" class="col-sm-4 col-form-label">Kode Akun</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="kodeAkun" value="ambil dari fast"
+                                            readonly>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="pemilikMaterial" class="col-sm-4 col-form-label">Pemilik
+                                        Material</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="pemilikMaterial" disabled>
+                                            <option hidden>Select First</option>
+                                            <option value="o&m" selected>O&M</option>
+                                            <option value="other">Other Pemilik</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="uploadFile" class="col-sm-4 col-form-label">Upload File</label>
+                                    <div class="col-sm-8">
+                                        <p class="m-0">
+                                            <a href="#"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+                                            <span class="upload-file-name">BAST Pembelian Barang Proyek Rokan.pdf</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row justify-content-md-end">
+                                    <button class="btn btn-info text-white btn-custom rounded-pill" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus Material -->
+    <div class="modal fade" id="hapusMaterialModal" tabindex="-1" aria-labelledby="hapusMaterialModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 0.6rem;">
+                <form action="penerimaan_material.html">
+                    <div class="modal-header justify-content-md-center bg-reject">
+                        <h5 class="modal-title text-white" id="hapusMaterialModalLabel">Hapus Material?</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-grid gap-4 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-danger btn-custom rounded-pill mr-2"
+                                data-dismiss="modal">Tidak</button>
+                            <button type="submit" class="btn btn-success btn-custom rounded-pill">Ya</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+    <script>
+        $("#dataTable").DataTable({
+            initComplete: function () {
+                // Have this variable accessible for the whole initComplete
+                var column;
+
+                // Iterate the column
+                this.api()
+                    .columns([2])
+                    .every(function () {
+                        column = this;
+                        var select = $('<ul class="dropdown-menu"><a class="text-dark" href="penerimaan_material.html"><li class="dropdown-item">All</li></a></ul>').appendTo(
+                            $("#Manufacturer")
+                        );
+
+                        column
+                            .data()
+                            .unique()
+                            .sort()
+                            .each(function (d, j) {
+                                select.append('<li class="dropdown-item">' + d + '</li>');
+                            });
+                    });
+
+                // Once all appendings are done, register a click handler
+                $("#Manufacturer li.dropdown-item").on("click", function () {
+                    var val = $(this).text();
+                    console.log(val);
+                    document.getElementById("show").innerHTML = val;
+                    column.search(val ? "^" + val + "$" : "", true, false).draw();
+                });
+            },
+        });
+    </script>
+</body>
+
+</html>
